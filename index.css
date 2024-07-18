@@ -1,0 +1,93 @@
+body {
+    font-family: 'cursive', 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-image: url('images/bg_image.jpg');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px); 
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  .fashion {
+    font-family: 'Times-new-Roman';
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    padding-right: 50px;
+    color: rgb(61, 37, 37); /* Set the color of the Fashion Assistant heading */
+    margin-bottom: 20px; /* Add margin at the bottom of the heading */
+  }
+  
+  .container {
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to the container */
+    backdrop-filter: blur(5px); /* Apply the blur effect to the background image only */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    /* Add fixed height to the chat container */
+    height: 700px;
+    /* Add overflow-y to enable vertical scrolling */
+    overflow-y: auto;
+  }
+  
+  /* Rest of the existing CSS remains unchanged */
+  
+  
+  .chat-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center; 
+  }
+  
+  #chat-output {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 250px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+
+  
+  .user-input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+  }
+  
+  .user-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .user-input button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #007bff; 
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Larger mobiles+ */
+  @media (min-width: 380px) {
+    /* Existing media query styles here */
+  }
